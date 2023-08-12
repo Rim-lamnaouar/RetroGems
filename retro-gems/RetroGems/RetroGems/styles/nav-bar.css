@@ -1,0 +1,106 @@
+:root {
+  --white-: #ffffff;
+  --purple-1: #231234;
+  --purple-2: #ac13cf;
+  --purple-3: #7248cc;
+  --size-sm: 8px;
+  --size-md: 16px;
+  --size-lg: 28px;
+  --size-xl: 56px;
+  --font-primary: "Public Pixel Font", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../resources/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Public Pixel Font"; /* Use the font family name as provided by FontSpace */
+  src: url("../resources/fonts/public-pixel-font/PublicPixel-z84yD.ttf")
+    format("truetype");
+  /* Add more src lines for other font formats if provided by FontSpace */
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 5px;
+  background-color: var(--purple-1);
+  position: fixed;
+  width: 100%;
+  z-index: 111111;
+  top: 0;
+}
+.left-section {
+  flex: 1;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  margin-right: 10px;
+  justify-content: space-around;
+  font-size: 14px;
+}
+.left-section a:hover {
+  color: var(--purple-3);
+}
+.contacts {
+  color: var(--purple-3);
+}
+.center-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Public Pixel Font", sans-serif;
+  font-size: var(--size-lg);
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.right-section a:hover {
+  color: var(--purple-3);
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 35px;
+}
+
+/* coming soon page style */
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+.cs-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple-1);
+}
+.cs-heading {
+  font-size: var(--size-xl);
+  font-family: var(--font-primary);
+  color: var(--white-);
+}
+
+.cs-container img {
+  width: 200px;
+  height: 200px;
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
